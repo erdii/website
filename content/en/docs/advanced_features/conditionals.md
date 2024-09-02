@@ -22,8 +22,8 @@ repository within the `4_conditionals` folder.
 
 The [Common Expression Language (CEL)](https://github.com/google/cel-spec) is
 used in Package Operator to declare inclusion rules and other constraints or
-conditions. The CEL feature set is limited to expressions with a _Boolean_ return type
-(to ensure type safety in Go).
+conditions. The CEL feature set is limited to expressions with a _Boolean_
+return type (to ensure type safety in Go).
 
 [Common Expression Language in Kubernetes](https://kubernetes.io/docs/reference/using-api/cel/)
 
