@@ -1935,3 +1935,14 @@ major change is API breaking. For example,
 - `^0.0.3` is equivalent to `>=0.0.3 <0.0.4`
 - `^0.0` is equivalent to `>=0.0.0 <0.1.0`
 - `^0` is equivalent to `>=0.0.0 <1.0.0`
+
+## CEL Expressions
+Package Operator provides functionality for evaluating _Common Expression Language_
+expressions via the `cel` function. The expressions have access to the full template
+context and [Reusable Expressions](/docs/advanced_features/conditionals/#4-reuse-expressions).
+For additional information, refer to the [CEL Conditionals](/docs/advanced_features/conditionals) section.
+```go
+cel "true && (4 < 5)"
+---
+true
+```

@@ -22,7 +22,8 @@ repository within the `4_conditionals` folder.
 
 The [Common Expression Language (CEL)](https://github.com/google/cel-spec) is
 used in Package Operator to declare inclusion rules and other constraints or
-conditions.
+conditions. The CEL feature set is limited to expressions with a _Boolean_ return type
+(to ensure type safety in Go).
 
 [Common Expression Language in Kubernetes](https://kubernetes.io/docs/reference/using-api/cel/)
 
@@ -31,7 +32,9 @@ conditions.
 Go templates can used to exclude objects. \
 Package Operator tolerates templates evaluating to empty strings and just
 skips these objects.
-This also works in multi-document YAML files.
+This also works in multi-document YAML files. \
+CEL expressions can be used in templates as well,
+see [CEL Expressions](/docs/api_reference/template-functions/#cel-expressions).
 
 Example:
 

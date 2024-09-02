@@ -23,6 +23,10 @@ when a package is being unpacked. \
 A package is unpacked when it is being created or
 either `.spec.image` or `.spec.config` changes.
 
+## CEL Expressions
+Package Operator templates provide functionality for CEL expression evaluation,
+see [CEL Expressions](/docs/api_reference/template-functions/#cel-expressions).
+
 ## Test Framework
 
 Because running YAML files through a template engine can lead to unexpected
